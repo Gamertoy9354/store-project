@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="SFC LOGO.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="SFC LOGO.png" alt="Restaurant Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <img src="SFCFULL.png" class="logoM" alt="Restaurant Logo" style="size: 20%;">
+        <br>
+        <h1 style="font-size: 90px;">Order Now</h1>
+    </section>
+    <section class="orderT">
+        <table align="center" class="menu">
+            <tr>
+                <th>Items</th>
+                <th>Amount/Quantity</th>
+                <th>Price</th>
+                <th>Choice</th>
+            </tr>
+            <!-- Adding the rest of the items from the menu -->
+            <tr>
+                <td class="nameI" >Tea</td>
+                <td id="TEA_Quantity">0 Dish(s)</td>
+                <td>10 Rs</td>
+                <td>
+                    <button id="ADD_TEA" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_TEA" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">Coffee</td>
+                <td id="COFFE_Quantity">0 Dish(s)</td>
+                <td>15 Rs</td>
+                <td>
+                    <button id="ADD_COFFE" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_COFFE" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <!-- Repeat similar structure for all other menu items -->
+            <!-- The below is a short example; you will need to add all the items similarly -->
+
+            <tr>
+                <td class="nameI">Milk</td>
+                <td id="MILK_Quantity">0 Dish(s)</td>
+                <td>20 Rs</td>
+                <td>
+                    <button id="ADD_MILK" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_MILK" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">Batter Milk</td>
+                <td id="BATTER_MILK_Quantity">0 Dish(s)</td>
+                <td>10 Rs</td>
+                <td>
+                    <button id="ADD_BATTER_MILK" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_BATTER_MILK" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <!-- Continue adding items... -->
+            <tr>
+                <td class="nameI">SP LASSI</td>
+                <td id="SP_LASSI_Quantity">0 Dish(s)</td>
+                <td>30 Rs</td>
+                <td>
+                    <button id="ADD_SP_LASSI" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_SP_LASSI" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">LASSI</td>
+                <td id="LASSI_Quantity">0 Dish(s)</td>
+                <td>15 Rs</td>
+                <td>
+                    <button id="ADD_LASSI" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_LASSI" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">MAGGIE</td>
+                <td id="MAGGE_Quantity">0 Dish(s)</td>
+                <td>20 Rs</td>
+                <td>
+                    <button id="ADD_MAGGE" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_MAGGE" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">POHA</td>
+                <td id="POUA_Quantity">0 Dish(s)</td>
+                <td>20 Rs</td>
+                <td>
+                    <button id="ADD_POUA" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_POUA" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">SAMOSA</td>
+                <td id="SAMOSA_Quantity">0 Dish(s)</td>
+                <td>20 Rs</td>
+                <td>
+                    <button id="ADD_SAMOSA" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_SAMOSA" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">BHAJI PAU</td>
+                <td id="BHAJI_PAU_Quantity">0 Dish(s)</td>
+                <td>20 Rs</td>
+                <td>
+                    <button id="ADD_BHAJI_PAU" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_BHAJI_PAU" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">IDALI SAMBHAR</td>
+                <td id="IDALI_SABHAR_Quantity">0 Dish(s)</td>
+                <td>20 Rs</td>
+                <td>
+                    <button id="ADD_IDALI_SABHAR" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_IDALI_SABHAR" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">KHAMAN BHAJIYA</td>
+                <td id="KHAMAN_BHAJIYA_Quantity">0 Dish(s)</td>
+                <td>20 Rs</td>
+                <td>
+                    <button id="ADD_KHAMAN_BHAJIYA" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_KHAMAN_BHAJIYA" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">PANI PURI</td>
+                <td id="PANI_PURI_Quantity">0 Dish(s)</td>
+                <td>10 Rs</td>
+                <td>
+                    <button id="ADD_PANI_PURI" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_PANI_PURI" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">BHEL</td>
+                <td id="BHEL_Quantity">0 Dish(s)</td>
+                <td>20 Rs</td>
+                <td>
+                    <button id="ADD_BHEL" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_BHEL" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">DAHI PURI</td>
+                <td id="DHAHI_PURI_Quantity">0 Dish(s)</td>
+                <td>20 Rs</td>
+                <td>
+                    <button id="ADD_DHAHI_PURI" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_DHAHI_PURI" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">CHATNI PURI</td>
+                <td id="CHATANI_PURI_Quantity">0 Dish(s)</td>
+                <td>20 Rs</td>
+                <td>
+                    <button id="ADD_CHATANI_PURI" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_CHATANI_PURI" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">DAL BHAT</td>
+                <td id="DAL_BHAT_Quantity">0 Dish(s)</td>
+                <td>25 Rs</td>
+                <td>
+                    <button id="ADD_DAL_BHAT" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_DAL_BHAT" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">PURI BHAJI</td>
+                <td id="PURI_BHAJI_Quantity">0 Dish(s)</td>
+                <td>25 Rs</td>
+                <td>
+                    <button id="ADD_PURI_BHAJI" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_PURI_BHAJI" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">SABJI ROTI</td>
+                <td id="ROTI_SABJI_Quantity">0 Dish(s)</td>
+                <td>30 Rs</td>
+                <td>
+                    <button id="ADD_ROTI_SABJI" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_ROTI_SABJI" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">EXTRA ROTI</td>
+                <td id="EXTRA_ROTI_Quantity">0 Dish(s)</td>
+                <td>5 Rs</td>
+                <td>
+                    <button id="ADD_EXTRA_ROTI" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_EXTRA_ROTI" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">EXTRA PAO</td>
+                <td id="EXTRA_PAO_Quantity">0 Dish(s)</td>
+                <td>5 Rs</td>
+                <td>
+                    <button id="ADD_EXTRA_PAO" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_EXTRA_PAO" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameI">GUJARATI THALI</td>
+                <td id="GUJARATI_THALI_Quantity">0 Dish(s)</td>
+                <td>100 Rs</td>
+                <td>
+                    <button id="ADD_GUJARATI_THALI" class="button-24" role="button">ADD</button>
+                    <button id="REMOVE_GUJARATI_THALI" class="button-24" role="button">Remove</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>TOTAL</b></td>
+                <td>----</td>
+                <td id="totalAmount">0 Rs</td>
+                <td><button id="clearAll" class="button-24" role="button">ClearAll</button></td>
+            </tr>
+        </table>
+        <br>
+        <p align="right">
+            <a href="checkout.html"><b><input style="margin-right: 80px;" type="button" class="HOB" id="checkB" value="Check Out"/></b></a>
+        </p>
+    </section>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-content">
+            <p>Contact us:</p>
+            <ul>
+                <li>Email: <a href="mailto:tushar.mehta770@gmail.com">tushar.mehta770@gmail.com</a></li>
+                <li>Phone: <a href="tel:+919925199300">+91 9925199300</a></li>
+                <li>Developer: Shis Tushar Maheta <a href="mailto:shismehta77@gmail.com">shismehta77@gmail.com</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
